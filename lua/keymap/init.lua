@@ -6,7 +6,7 @@ require("keymap.config")
 
 local plug_map = {
 	-- Bufferline
-	["n|\\"] = map_cmd("ggVG:SnipRun<CR>"):with_noremap():with_silent(),
+	["n|\\"] = map_cmd("ggVG:SnipRun<CR><C-O>"):with_noremap():with_silent(),
 	-- set SnipRun to run the selected lines
 	["v|<leader>r"] = map_cr("SnipRun"):with_noremap():with_silent(),
 
